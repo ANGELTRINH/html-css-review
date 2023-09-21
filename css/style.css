@@ -1,111 +1,147 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-      margin: 0;
-      background: white;
-      font-family: 'Nunito', sans-serif;
-      font-size: 20px;
-      color:plum;
-  }
-  
-  header {
-    background: #0E1215;
-    padding: 1em 8em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-.banner img{
-    width: 100%;
-    size: 1200x;
-    margin:0;
+* {
+box-sizing: border-box;
 }
 
-.name {
-    font-weight: bold;
-    text-transform: none;
-    font-size: 30px;
-    text-align: left;
-    color:plum;
-  }
+body{
+  font-family:'Nunito', sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  margin:0;
+}
 
-  nav {
-    text-align: left;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-  }
-  
-  nav li {
-    margin-left: 2em;
-    margin-bottom: 0;
-  }
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  nav a {
-    color: plum;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight:lighter; 
-  }
-  
-  main {
-    padding: 0 3em;
-  }
+/* headings - come back to this next class*/
 
+#company-name {
+  color:#DEC9E9;
+  font-size: 1.5rem;
+}
 
-  .banner{
-    width:100%;
-    padding:8em 0em;
-    background-image:url("../Images/ice-cream-cones.jpg");
-    background-repeat:no-repeat;
-    background-position:center;
-  }
+#intro,
+#fan-fav,
+#team{
+  padding:4em 0;
+}
 
-  body{
-    font-family: 'Nunito', sans-serif;
-    line-height: 1.5rem;
-  }
+#header{
+  background-color:#000;
+}
 
+#header > div{
+  display:flex;
+  justify-content:space-between;
+  align-items: none;
+}
 
-  h1{
-    color:#fff;
-    text-align: center;
-    text-shadow:#000 1px 0 10px;
-    font-family:'Wix Madefor Display', sans-serif;
-    text-transform:uppercase;
-  }
+nav ul{
+  display:flex;
+  list-style-type:none;
+}
 
-  #section1{
-    background-color:#7251B5;
-    color:#fff;
-  }
+nav ul li{
+  padding-left:1.25em;
+}
 
-  #section2{
-    background-color:#000;
-    color:#DEC9E9;
-  }
+nav ul li a:link, 
+nav ul li a:visited{ 
+  color:#DEC9E9;
+  text-decoration: none;
+}
 
-  #section3{
-    background-color:#7251B5;
-    color:#fff;
-  }
+nav ul li a:hover,
+nav ul li a:focus{
+  color:#fff;
+}
 
-  #section3 h2{
-    text-align:center;
+#hero-banner{
+  height:60vh;
 
-  }
-  
-  footer{
-    background-color:#000;
-    color:#fff;
-    text-align:center;
-  }
+  background-color: #7251B5;
+
+  background-image: url(../Images/ice-cream-cones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display:flex;
+  align-items:center;
+}
+
+#intro {
+  background-color:#7251B5;
+}
+
+#intro p {
+  max-width: 50%; 
+}
+
+#fan-fav {
+  background-color:black;
+  color:#DEC9E9;
+}
+
+#fan-fav ol {
+  list-style-type:none;
+  padding-left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fan-fav ol li {
+  width:50%;
+  padding-right:15%;
+}
+
+#team{
+  background-color:#7251B5;
+}
+
+#team h2,
+.team-intro {
+  max-width:40%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top:2.5em;
+  gap:1em;
+}
+
+.team-grid article{
+  background-color:#6647A6;
+  border-radius:20px;
+  padding: 2em 0; 
+
+  text-align:center;
+}
+
+.team-grid article img{
+  width:80px;
+
+  border-radius:50%;
+  filter:grayscale(100%);
+}
+
+.team-grid h3{
+  text-transform:uppercase;
+  margin-bottom: 0;
+}
+
+.team-grid article p{
+  margin-top: 0;
+}
+
+footer{
+  background-color:#000;
+  text-align: center;
+  padding: 1em 0;
+}
